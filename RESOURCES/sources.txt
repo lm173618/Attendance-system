@@ -1,0 +1,7 @@
+#I2C / LCD screen documentation 
+https://playground.arduino.cc/Main/I2cScanner/
+https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+
+
+
+ 
