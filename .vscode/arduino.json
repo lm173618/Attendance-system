@@ -1,6 +1,0 @@
-{
-    "port": "COM3",
-    "programmer": "AVRISP mkII",
-    "board": "arduino:avr:uno",
-    "sketch": "RC522_test.ino"
-}
