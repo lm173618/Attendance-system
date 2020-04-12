@@ -5,4 +5,19 @@ https://forum.arduino.cc/index.php?topic=507401.0
 https://ouiaremakers.com/posts/tutoriel-diy-connecter-un-ecran-lcd-en-i2c
 
 
+#SPI / RC522 documentation 
+https://playground.arduino.cc/Learning/MFRC522/
+http://idehack.com/blog/utiliser-un-module-rfid-rc522-avec-larduino/
+https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf
+
+#JAVA Processing and ControlP5
+http://www.sojamo.de/libraries/controlP5/reference/
+https://processing.org/reference/
+
+#arduino
+http://elextutorial.com/learn-arduino/arduino-serial-read-string-line-from-serial-monitor-readstring-function/
+
+
+
+
  
