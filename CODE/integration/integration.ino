@@ -4,25 +4,33 @@
 
 LiquidCrystal_I2C lcd(0x27,16,2);  //0x27 address got with a program
  
-#define SS_PIN 10
-#define RST_PIN 9
+#define SS_PIN   10
+#define RST_PIN  9
+#define BUZZ_PIN 6
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 
 void LCDSerialData()
 {
   lcd.clear(); 
   String s1 = Serial.readString();// s1 is String type variable.
+  if(s1!="")
+  {
+   tone(BUZZ_PIN, 1000); // Send 1KHz sound signal...
+   delay(500);        // ...for 1 sec
+   noTone(BUZZ_PIN);     // Stop sound
+  }
   lcd.setCursor(0,0); 
   lcd.print(s1);
 }
  
 void setup() 
 {
-  Serial.begin(9600);   // Initiate a serial communication
+  Serial.begin(9600);// Initiate a serial communication
   SPI.begin();      // Initiate  SPI bus
   mfrc522.PCD_Init();   // Initiate MFRC522
   lcd.init();// initialize the lcd
   lcd.backlight();//Activate lcd backlight 
+  pinMode(BUZZ_PIN, OUTPUT); // Set buzzer - pin 9 as an output
   //Serial.println("Approximate your card to the reader...");
   //Serial.println();
 
